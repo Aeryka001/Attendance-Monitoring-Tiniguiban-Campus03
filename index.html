@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Attendance Monitoring</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Attendance Monitoring</h1>
+      <p>Select your name, choose Time In or Time Out, and the system records time automatically with location check.</p>
+    </header>
+
+    <section class="card">
+      <form id="attendance-form">
+        <label for="user-name">Name</label>
+        <select id="user-name" required>
+          <option value="">-- Select your name --</option>
+          <option value="Engr. Leo S. Gabo">Engr. Leo S. Gabo</option>
+          <option value="Engr. Val S. Mangalino">Engr. Val S. Mangalino</option>
+          <option value="Engr. John Eric Aro">Engr. John Eric Aro</option>
+          <option value="Engr. Marilyn Nacpil">Engr. Marilyn Nacpil</option>
+          <option value="Engr. Jessani Llanto">Engr. Jessani Llanto</option>
+          <option value="Engr. Bea Villena">Engr. Bea Villena</option>
+          <option value="Engr. Alvin Alcosaba">Engr. Alvin Alcosaba</option>
+          <option value="Engr. Alvin Soguilon ">Engr. Alvin Soguilon </option>
+          <option value="Engr. Benedict Orlido">Engr. Benedict Orlido</option>
+          <option value="Engr. Bryan Adams Gabayan">Engr. Bryan Adams Gabayan</option>
+          <option value="Engr. Cydel Aganon">Engr. Cydel Aganon</option>
+          <option value="Engr. Ereca Bete">Engr. Ereca Bete</option>
+          <option value="Engr. Jewel Faith Alapad">Engr. Jewel Faith Alapad</option>
+          <option value="Engr. John Quillope ">Engr. John Quillope </option>
+          <option value="Engr. Lester Philip Cabrestante ">Engr. Lester Philip Cabrestante </option>
+          <option value="Engr. Liza Garcia ">Engr. Liza Garcia </option>
+          <option value="Engr. Miguelito Artillaga ">Engr. Miguelito Artillaga </option>
+          <option value="Engr. Niccy Greiann Gavino">Engr. Niccy Greiann Gavino</option>
+          <option value="Engr. Princess Soledad">Engr. Princess Soledad</option>
+          <option value="Engr. Rene Luis Olorga" >Engr. Rene Luis Olorga</option>
+          <option value="Karla">Karla</option>
+        </select>
+
+        <label for="attendance-type">Status</label>
+        <select id="attendance-type" required>
+          <option value="">-- Select status --</option>
+          <option value="Time In">Time In</option>
+          <option value="Time Out">Time Out</option>
+        </select>
+
+        <label for="attendance-location">Location of Time In/Time Out</label>
+        <select id="attendance-location" required>
+          <option value="">-- Select location --</option>
+          <option value="Ms. Amada's Room">Ms. Amada's Room</option>
+          <option value="Faculty Room">Faculty Room</option>
+          <option value="Other">Other</option>
+        </select>
+        <input id="attendance-location-other" type="text" placeholder="Enter other location" style="display:none;" />
+
+        <label for="attendance-time">Time</label>
+        <input id="attendance-time" type="text" readonly />
+
+        <div class="geo-status" id="geo-status">Checking location…</div>
+
+        <button id="submit-button" type="submit" disabled>Submit Attendance</button>
+      </form>
+    </section>
+
+    <section class="card" id="recent-card">
+      <h2>Last Recorded Entry</h2>
+      <div id="recent-entry">No entries submitted yet.</div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
