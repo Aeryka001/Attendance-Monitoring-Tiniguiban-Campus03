@@ -9,9 +9,9 @@ const attendanceLocation = document.getElementById('attendance-location');
 const attendanceLocationOther = document.getElementById('attendance-location-other');
 
 const officeLocation = {
-  latitude: 9.750547183685015,
-  longitude: 118.7657240033054,
-  radiusMeters: 100,
+latitude: 9.9772990668531392,
+  longitude: 118.73658415681145,
+  radiusMeters: 150,
 };
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwwB8CrtXHOJfv7fWoxTYam9aMjq-cgYhqb--s5hSHfh-3hTS2sCLk78YGPzuUq7EpBFg/exec';
 
