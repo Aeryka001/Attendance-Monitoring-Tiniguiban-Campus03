@@ -9,8 +9,8 @@ const attendanceLocation = document.getElementById('attendance-location');
 const attendanceLocationOther = document.getElementById('attendance-location-other');
 
 const officeLocation = {
-latitude: 9.772787506366345,
-  longitude:  118.73661988823704,
+latitude: 9.772912,
+  longitude:  118.736317,
   radiusMeters: 150,
 };
 
